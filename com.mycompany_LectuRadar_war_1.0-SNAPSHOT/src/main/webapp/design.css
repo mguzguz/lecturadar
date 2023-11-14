@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&diplay=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=outline');
+*{
+ margin: 0;
+ padding: 0; 
+ box-sizing: border-box;
+ border: none;
+ outline:none; 
+ scroll-behavior: smooth; 
+}
+:root {
+    --bg-color: #ffc2b2;
+    --secndo-bg-color: #f4c92f; 
+    --text-color: #000;
+    --main-color: #68cfb7;
+    --title: #dad1b4;
+}
+html{
+    font-size: 62.5%; 
+    overflow-x: hidden; 
+}
+.discover{
+    background-image: url("IMAGES/discover.png");
+    background-size: cover; 
+}
+.myspace{
+    background-image: url("IMAGES/myspace.png");
+    background-size: cover; 
+}
+.header{
+    text-align: center; 
+}
+h1 {
+    font-size: 45px; 
+    align-items: center; 
+}
+.section{
+    min-height: 100vh; 
+    padding: 3rem 5% 2rem;   
+}
+.footer-discover{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos del footer */
+    align-items: center; /* Centra verticalmente los elementos del footer */
+    text-align: center;
+    background: var(--bg-color);
+    height: 7%; /* Ajusta el valor según tus necesidades */
+}
+.footer-myspace{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos del footer */
+    align-items: center; /* Centra verticalmente los elementos del footer */
+    text-align: center;
+    background: var(--main-color);
+    height: 7%; /* Ajusta el valor según tus necesidades */
+}
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente en el navbar */
+    width: 100%;
+}
+.navbar a {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: orangered;
+}
+.discover-content{
+    background-color: var(--main-color); 
+}
+.columns{
+    padding-top: 2%; 
+    display: flex;
+    justify-content: space-between;
+}
+.column {
+    flex-basis: 10%; /* Define el ancho de cada columna */
+    background-color: var(--secndo-bg-color);
+    padding: 8px;
+    border: 1.5px solid #000;
+    text-align: center; 
+    font-size: 1.3rem;
+}
+.column-myspace{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cambia el número de columnas según tus necesidades */
+    grid-gap: 10px; /* Espacio entre las columnas */
+}
+
+.pilas {
+    background-color: var(--secndo-bg-color);
+    padding: 10px;
+    border: 1.5px solid #000;
+    font-size: 2rem;
+    text-align: justify; /* Justificar el texto */
+}
+#aventuraText {
+    text-align: center; /* Para centrar el texto horizontalmente */
+    font-size: 20px; /* Cambiar el tamaño de fuente según tus preferencias */
+    font-weight: bold; /* Opcional, cambiar el peso de la fuente */
+    color: #333; /* Cambiar el color del texto según tus preferencias */
+}
+/* Estilos para el formulario */
+.form{
+    display: inline-block;
+    padding: 4px;
+    border: 2px solid #68cfb7; /* Borde con un color personalizado */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #f4c92f; /* Fondo con un color personalizado */
+}
+
+/* Estilos para los campos ocultos */
+input[type="hidden"] {
+    display: none; /* Oculta los campos ocultos */
+}
+
+/* Estilos para el botón */
+input[type="submit"] {
+    background-color: #68cfb7; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 3px 6px; /* Espaciado interno */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición al pasar el ratón */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a048; /* Color de fondo al pasar el ratón */
+}

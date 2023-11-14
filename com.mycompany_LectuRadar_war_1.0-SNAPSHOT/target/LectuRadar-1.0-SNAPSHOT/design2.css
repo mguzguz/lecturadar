@@ -1,0 +1,113 @@
+
+/* 
+    Created on : Nov 7, 2023, 1:15:40 PM
+    Author     : camig
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&diplay=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=outline');
+*{
+ margin: 0;
+ padding: 0; 
+ box-sizing: border-box;
+ border: none;
+ outline:none; 
+ scroll-behavior: smooth; 
+}
+:root {
+    --colorAzul: #68cfb7;
+    --bg-color: #f4c92f;
+    --secndo-bg-color: #f4c92f; 
+    --text-color: #000;
+    --main-color: #ffc2b2;
+    --title: #dad1b4;
+}
+html{
+    font-size: 62.5%; 
+    overflow-x: hidden; 
+}
+body {
+  background-image: url("IMAGES/cuadro2.png");
+  background-size: cover; 
+}
+.header{
+    text-align: center; 
+}
+h1 {
+    font-size: 50px; 
+    align-items: center; 
+}
+.section{
+    min-height: 100vh; 
+    padding: 3rem 5% 2rem;   
+    background-color: transparent; 
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos del footer */
+    align-items: center; /* Centra verticalmente los elementos del footer */
+    text-align: center;
+    background: var(--bg-color);
+    height: 7%; /* Ajusta el valor según tus necesidades */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente en el navbar */
+    width: 100%;
+}
+
+.navbar a {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: orangered;
+}
+form {  
+    max-width: 50%;
+    margin: 100px 0 0 470px; /* Ajusta los valores según sea necesario */
+    padding: 30px;
+    background-color: var(--colorAzul);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+
+  }
+
+  input[type="submit"] {
+    align-self:center;
+    background-color: var(--bg-color);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0 100px 0 45%;
+  }
+  input[type="submit"]:hover {
+    background-color:#45a048;
+  }
+.cuadro {
+    width: 320px; /* Ancho del cuadro */
+    padding: 20px; /* Espaciado interno */
+    background-image: url("IMAGES/cuadro.jpg"); /* Imagen de fondo */
+    border: 2px solid black; /* Borde del cuadro en color negro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 100px 20px 20px; /* Ajusta el margen izquierdo para dar más espacio en la izquierda */
+    float: left; /* Posición a la izquierda */
+    height: 420px; /* Ajusta la altura según tus necesidades */
+    background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+}
+
